@@ -21,6 +21,7 @@ The script was written and tested with Python 3.7.4
 `pip3 install selenium`  
 `pip3 install pyvirtualdisplay`  
 `sudo apt-get install xserver-xephyr`  
+`sudo apt-get install xvfb x11vnc daemon`
 
 3. Choose a Browser and download the corresponding webdriver  
 **Firefox:** download [geckodriver](https://github.com/mozilla/geckodriver/releases) and save it to the same directory as the script.  
