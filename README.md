@@ -1,5 +1,9 @@
-# MeinCampusCrawler
-Script to check for exam results
+# MeinCampusCrawler  
+**What?**  
+A script to check for exam results on [mein Campus](https://www.campus.uni-erlangen.de).  
+
+**Why?**  
+[Because I should be studying right now](https://en.wikipedia.org/wiki/Procrastination).  
 
 How to use:
 
@@ -8,12 +12,12 @@ The script was written and tested with Python 3.7.4
 
 2. Install the following packages:  
 `pip3 install selenium`  
-`pip3 install selenium`  
+`pip3 install pyvirtualdisplay`  
 
 3. Choose a Browser and download the coresponding webdriver  
-*Firefox:* download [geckodriver](https://github.com/mozilla/geckodriver/releases) and save it to the same directory as the script.  
-*Chromium (Raspbian):* To be tested.  
-Other browsers haven't been tested but might work as well.  
+**Firefox:** download [geckodriver](https://github.com/mozilla/geckodriver/releases) and save it to the same directory as the script.  
+**Chromium (Raspbian):** To be tested.  
+**Other browsers** haven't been tested but might work as well.  
 
 4. Change the variables to your needs.  
 There are two parts of the code that you want to edit:  
@@ -25,9 +29,9 @@ If you are or have been enlisted in more then one course of study you have to ch
 ![Screenshot of Studiengang](studiengang.png "Screenshot")
 
 5. Arrange recurring execution  
-*Windows:* Use task schedueler.  
-*Linux/Raspbian:* Use crontab.
+**Windows:** Use task schedueler.  
+**Linux/Raspbian:** Use [crontab](https://crontab-generator.org/).
 
 
 How it works:  
-This python script launches a browser instance and navigates to the tabel of exam results. It than checks if the table differs from the last time it checked and if so, it'll send an email with the delta to your mail adress.
+This python script launches a browser instance and navigates to the table of results. It than checks if the table differs from the last time it checked and if so, it'll send an email with the delta to your mail adress.
