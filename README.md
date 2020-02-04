@@ -35,7 +35,7 @@ There are several variables that you want to edit:
   * you need to enter the credentials of the mailserver  
   **Your credentials are stored in plain text in this script. Be aware of this!**
 * Choose your course of study  
-If you are or have been enlisted in more then one course of study you have to choose which one you want to check. To specify which one you want, you must edit the variable studdienGang to either std0 or std1 (see image).  
+If you are or have been enlisted in more then one course of study you have to choose which one you want to check. To specify which one you want, you must edit the variable studdienGang to either stg0 or stg1 (see image).  
 ![Screenshot of Studiengang](studiengang_select.png "Screenshot")
 
 5. Arrange recurring execution  
