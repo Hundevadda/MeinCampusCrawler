@@ -20,6 +20,7 @@ The script was written and tested with Python 3.7.4
 2. Install the following packages:  
 `pip3 install selenium`  
 `pip3 install pyvirtualdisplay`  
+`sudo apt-get install xserver-xephyr`  
 
 3. Choose a Browser and download the corresponding webdriver  
 **Firefox:** download [geckodriver](https://github.com/mozilla/geckodriver/releases) and save it to the same directory as the script.  
