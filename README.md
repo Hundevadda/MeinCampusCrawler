@@ -5,7 +5,7 @@ A script to check for exam results on [mein Campus](https://www.campus.uni-erlan
 **Why?**  
 [Because I should be studying right now](https://en.wikipedia.org/wiki/Procrastination).  
 
-How to use:
+**How to use:**
 
 1. Install Python  
 The script was written and tested with Python 3.7.4
@@ -33,5 +33,5 @@ If you are or have been enlisted in more then one course of study you have to ch
 **Linux/Raspbian:** Use [crontab](https://crontab-generator.org/).
 
 
-How it works:  
+**How it works:**  
 This python script launches a browser instance and navigates to the table of results. It than checks if the table differs from the last time it checked and if so, it'll send an email with the delta to your mail adress.
