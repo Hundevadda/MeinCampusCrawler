@@ -22,7 +22,7 @@ There are two parts of the code that you want to edit:
   * you need to enter the credentials of the mailserver
 * Choose you course of study  
 If you are or have been enlisted in more then one course of study you have to choose which one you want to check. To specify which one you want, you must edit the variable studdienGang to either std0 or std1 (see image).  
-![alt text](course_of_study.png "Screenshot")
+![Screenshot of Studiengang](studiengang.png "Screenshot")
 
 5. Arrange recurring execution  
 *Windows:* Use task schedueler.  
