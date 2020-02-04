@@ -30,7 +30,8 @@ The script was written and tested with Python 3.7.4
 There are several variables that you want to edit:  
 * Your credentials/email details
   * you need to enter your SSO credentials
-  * you need to enter the credentials of the mailserver
+  * you need to enter the credentials of the mailserver  
+  **Your credentials are stored in plain text in this script. Be aware of this!**
 * Choose your course of study  
 If you are or have been enlisted in more then one course of study you have to choose which one you want to check. To specify which one you want, you must edit the variable studdienGang to either std0 or std1 (see image).  
 ![Screenshot of Studiengang](studiengang.png "Screenshot")
