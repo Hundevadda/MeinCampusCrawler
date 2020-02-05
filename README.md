@@ -18,6 +18,7 @@ The script was written and tested with Python 3.7.4
 `sudo apt-get install python3`
 
 2. Install the following packages:  
+`sudo apt install python3-pip`  
 `pip3 install selenium`  
 `pip3 install pyvirtualdisplay`  
 `sudo apt-get install xserver-xephyr`  
