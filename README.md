@@ -27,8 +27,8 @@ The script was written and tested with Python 3.7.4
 3. Choose a Browser and download the corresponding webdriver  
 **Firefox:** download [geckodriver](https://github.com/mozilla/geckodriver/releases) and save it to the same directory as the script.  
 **Chromium (Raspbian):**  
-`sudo apt-get install chromium`
-`sudo apt-get install chromium-chromedriver`
+`sudo apt-get install chromium`  
+`sudo apt-get install chromium-chromedriver`  
 **Other browsers** haven't been tested but might work as well.  
 If it isn't, you have to make the driver executable:  
 `chmod +x PATH_TO_YOUR_WEBDRIVER`
@@ -58,3 +58,9 @@ If you are or have been enlisted in more then one course of study you have to ch
 Here is an example which executes the script every 15 minutes:  
 `*/15 * * * * cd /home/pi/mnt/ && export PATH=$PATH:/home/pi/mnt/ && /usr/bin/python3 /home/pi/mnt/campusCrawler.py`
 
+**This script was tested on:**  
+
+| Hardware | OS | Browser |
+| --- | --- | --- |
+| Raspberry Pi 3b+ | Raspbian Buster | Chromium |
+| Raspberry Pi Zero WH | Raspbian Buster Lite | Chromium |
