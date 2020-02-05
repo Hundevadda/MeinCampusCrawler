@@ -26,7 +26,9 @@ The script was written and tested with Python 3.7.4
 
 3. Choose a Browser and download the corresponding webdriver  
 **Firefox:** download [geckodriver](https://github.com/mozilla/geckodriver/releases) and save it to the same directory as the script.  
-**Chromium (Raspbian):** To be tested.  
+**Chromium (Raspbian):**  
+`sudo apt-get install chromium`
+`sudo apt-get install chromium-chromedriver`
 **Other browsers** haven't been tested but might work as well.  
 If it isn't, you have to make the driver executable:  
 `chmod +x PATH_TO_YOUR_WEBDRIVER`
