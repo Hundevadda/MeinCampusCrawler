@@ -6,8 +6,10 @@ import smtplib
 from selenium import webdriver
 from pyvirtualdisplay import Display
 from email.message import EmailMessage
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 # Your SSO credentials go here
 ssoID = "YOUR_SINGLE_SIGN_ON_ID"
@@ -17,7 +19,7 @@ ssoPW = "YOUR_SINGLE_SIGN_ON_PASSWORD"
 mailServerID = "YourMailAddress@Example.de"
 mailServerPW = "PasswordForYourMailAddress"
 mailServerAdress = "" # Look it up at your mail host. It usually starts with smtp (e.g. smtp.web.de)
-mailServerSmtpPort = 123456 # Look it up at your mail host. 587 is a common one
+mailServerSmtpPort = 587 # Look it up at your mail host. 587 is a common one
 targetMailAddress = "TheMailToWhichYourNotificationGoes@fau.de"
 
 # general config
@@ -57,12 +59,13 @@ def fetchNoten():
         loginButton.click()
 
         #Login on SSO 
+        next_element = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.ID, "username")))
         driver.find_element_by_id("username").send_keys(ssoID)
         driver.find_element_by_id("password").send_keys(ssoPW)
         driver.find_element_by_id("submit_button").click()
 
         #navigate to Notenspiegel
-        time.sleep(2) #TODO find a better solution
+        next_element = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.ID, "pruefungen")))
         driver.find_element_by_id("pruefungen").click()
         driver.find_element_by_xpath('//*[@id="notenspiegelStudent"]').click()
         # The following click might only be necessary if you are able to choose between
