@@ -85,6 +85,9 @@ def checkForDeltas(newVersion):
     if newVersion is None:
         return
 
+    if newVersion == "":
+        return
+
     # Create buffer file if it doesn't already exist
     if not os.path.isfile(pathToBufferFile):
         newfile = open(pathToBufferFile, 'w+')
